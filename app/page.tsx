@@ -7,7 +7,6 @@ import WhatYouGet from "@/components/what-you-get";
 import Packages from "@/components/packages";
 import CallToAction from "@/components/call-to-action";
 import AboutSection from "@/components/about-section";
-import { A4MSection } from "@/components/a4m-section";
 import { getAcfOptions, getPageBySlug } from "@/lib/wordpress";
 
 export default async function Home() {
@@ -37,15 +36,6 @@ export default async function Home() {
           backgroundImageUrl={bgImageUrl}
           backgroundVideoUrl={bgVideoUrl}
           buttonText={acf?.button_text}
-        />
-        <A4MSection
-          heading={acf?.a4m_heading}
-          subheading={acf?.a4m_subheading}
-          description={acf?.a4m_description}
-          buttonText={acf?.a4m_button_text}
-          buttonLink={acf?.a4m_link}
-          textLinkText={acf?.text_link_text}
-          textLink={acf?.text_link}
         />
         <ServicesSection />
         <AboutSection />
